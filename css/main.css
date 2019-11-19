@@ -8,30 +8,19 @@ body {
 }
 
 h1 {
-    position: relative;
-    padding: 0.6em;
-    background: #e0edff;
-    margin-bottom: 40px;
-}
-
-h1:after {
-    position: absolute;
-    content: '';
-    top: 100%;
-    left: 30px;
-    border: 15px solid transparent;
-    border-top: 15px solid #e0edff;
-    width: 0;
-    height: 0;
+  background: linear-gradient(transparent 70%, #a7d6ff 70%);
 }
 
 h2 {
-    margin-top: 40px;
-    padding: 0.4em 0.5em; /*文字の上下 左右の余白*/
-    color: #494949; /*文字色*/
-    background: #f4f4f4; /*背景色*/
-    border-left: solid 5px #7db4e6; /*左線*/
-    border-bottom: solid 3px #d7d7d7; /*下線*/
+  position: relative;
+  padding: 0.25em 0;
+}
+h2:after {
+  content: "";
+  display: block;
+  height: 4px;
+  background: -webkit-linear-gradient(to right, rgb(230, 90, 90), transparent);
+  background: linear-gradient(to right, rgb(230, 90, 90), transparent);
 }
 
 section > p {
