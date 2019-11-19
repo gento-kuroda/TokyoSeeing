@@ -8,30 +8,19 @@ body {
 }
 
 h1 {
-    position: relative;
-    padding: 0.6em;
-    background: #e0edff;
-    margin-bottom: 40px;
-}
-
-h1:after {
-    position: absolute;
-    content: '';
-    top: 100%;
-    left: 30px;
-    border: 15px solid transparent;
-    border-top: 15px solid #e0edff;
-    width: 0;
-    height: 0;
+  background: linear-gradient(transparent 70%, #a7d6ff 70%);
 }
 
 h2 {
-    margin-top: 40px;
-    padding: 0.4em 0.5em; /*文字の上下 左右の余白*/
-    color: #494949; /*文字色*/
-    background: #f4f4f4; /*背景色*/
-    border-left: solid 5px #7db4e6; /*左線*/
-    border-bottom: solid 3px #d7d7d7; /*下線*/
+  position: relative;
+  padding: 0.25em 0;
+}
+h2:after {
+  content: "";
+  display: block;
+  height: 4px;
+  background: -webkit-linear-gradient(to right, rgb(230, 90, 90), transparent);
+  background: linear-gradient(to right, rgb(230, 90, 90), transparent);
 }
 
 section > p {
@@ -55,18 +44,18 @@ dl dd {
 
 
 ul, ol {
-    background: #fffde8;
-    box-shadow: 0px 0px 0px 10px #fffde8; /*線の外側*/
-    border: dashed 2px #ffb03f; /*破線*/
-    border-radius: 9px;
-    margin-left: 10px; /*はみ出ないように調整*/
-    margin-right: 10px; /*はみ出ないように調整*/
-    padding: 0.5em 0.5em 0.5em 2em;
+  padding: 0;
+  position: relative;
 }
 
 ul li, ol li {
-    line-height: 1.5;
-    padding: 0.5em 0;
+  color: #2d8fdd;
+  border-left: solid 6px #2d8fdd;/*左側の線*/
+  background: #f1f8ff;/*背景色*/
+  margin-bottom: 3px;/*下のバーとの余白*/
+   line-height: 1.5;
+  padding: 0.5em;
+  list-style-type: none!important;/*ポチ消す*/
 }
 
 footer {
